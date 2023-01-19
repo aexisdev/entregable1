@@ -1,23 +1,23 @@
 [
     {
         "name": "comida",
-        "tarea": "12",
-        "hora": "no hacer nada",
-        "tarde": "pensar",
+        "title": "12",
+        "descripcion": "no hacer nada",
+        "status": "pensar",
         "id": 1
     },
     {
         "name": "dsdssd",
-        "tarea": "12",
-        "hora": "no hacer nada",
-        "tarde": " ejercicio",
+        "title": "12",
+        "descripcion": "no hacer nada",
+        "status": "ejercicio",
         "id": 2
     },
     {
         "name": "fffffff",
-        "tarea": "ffffffff",
-        "hora": "fffffffff",
-        "tarde": "ffffff",
+        "title": "ffffffff",
+        "descripcion": "fffffffff",
+        "status": "ffffff",
         "id": 3
     }
 ]

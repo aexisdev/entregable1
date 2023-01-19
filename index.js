@@ -44,15 +44,15 @@ app.put('/app', async (req, res) => {
     //*Obtener arreglo desde jsonFile.
     const appArray = JSON.parse(await fs.readFile(jsonPath, 'utf8'));
     //*Obteniendo los elementos del body.
-    const {name, tarea, hora, tarde, id} = req.body;
+    const {name, title, descripcion, status, id} = req.body;
     //*Buscando el id de los usuarios para actualizar.
     const choresIndex = appArray.findIndex(chores => chores.id === id);
     // console.log(choresIndex);
     if(choresIndex >= 0){
         appArray[choresIndex].name = name;
-        appArray[choresIndex].tarea = tarea;
-        appArray[choresIndex].hora = hora;
-        appArray[choresIndex].tarde = tarde;
+        appArray[choresIndex].title = title;
+        appArray[choresIndex].descripcion = descripcion;
+        appArray[choresIndex].status = status;
     };
     // console.log(appArray);
     //*Escribir de nuevo en el arreglo.
